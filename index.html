@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Ewan N'Guessan</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #1e2a38;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #293949;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    h1, h2 {
+      color: #1e2a38;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .gallery-item {
+      border: 1px solid #ccc;
+      padding: 10px;
+      background: #fafafa;
+      border-radius: 4px;
+      text-align: center;
+    }
+    .gallery-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    footer {
+      background: #1e2a38;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ewan N'Guessan</h1>
+    <p>Géomaticien passionné de cartographie – Master de Géographie</p>
+    <p>📞 07 51 15 92 92 | ✉️ <a href="mailto:ericn4712@gmail.com" style="color: #ffd">ericn4712@gmail.com</a></p>
+  </header>
+
+  <nav>
+    <a href="#presentation">Présentation</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#cartes">Cartes</a>
+  </nav>
+
+  <section id="presentation">
+    <h2>Présentation</h2>
+    <p>Étudiant en Master de Géographie à Aix-Marseille Université, je conçois la cartographie comme un langage visuel essentiel pour analyser et partager les dynamiques territoriales. Mon parcours mêle SIG, télédétection, analyse spatiale et engagement humanitaire.</p>
+  </section>
+
+  <section id="competences">
+    <h2>Compétences</h2>
+    <ul>
+      <li>Logiciels SIG : QGIS, ArcGIS, Google Earth Engine</li>
+      <li>Langages : Python (geopandas, rasterio), HTML/CSS</li>
+      <li>Indices : NDVI, SAVI, NDWI, NDBI</li>
+      <li>Modélisation : CA-Markov, TerrSet</li>
+      <li>Communication interculturelle et vulgarisation scientifique</li>
+    </ul>
+  </section>
+
+  <section id="projets">
+    <h2>Projets</h2>
+    <ul>
+      <li><strong>Étude de la dynamique forestière à Séguéla (Côte d’Ivoire)</strong> : classification satellitaire, projection 2035.</li>
+      <li><strong>École d’été à Sousse (Tunisie)</strong> : exploration des centuriations romaines, levés terrain et SIG.</li>
+      <li><strong>Bénévolat Croix-Rouge</strong> : accueil et accompagnement de publics en situation de vulnérabilité.</li>
+    </ul>
+  </section>
+
+  <section id="cartes">
+    <h2>Cartes réalisées</h2>
+    <div class="gallery">
+      <div class="gallery-item"><img src="carte_de_localisation_yamal.png" alt="Localisation Yamal"><p>Carte de localisation – Yamal</p></div>
+      <div class="gallery-item"><img src="carte_de_relation_NDVI_TPS_NDBI.png" alt="Relation NDVI TPS NDBI"><p>Relation entre NDVI, Température, Urbanisation</p></div>
+      <div class="gallery-item"><img src="centre_ville_aubagne_ilot_de_chaleur.png" alt="Ilot de chaleur Aubagne"><p>Centre-ville Aubagne – îlot de chaleur</p></div>
+      <div class="gallery-item"><img src="exemple_de_lieu_chaud_ilot.png" alt="Lieu chaud"><p>Exemple d’îlot de chaleur urbain</p></div>
+      <div class="gallery-item"><img src="ndvi_aubagne.png" alt="NDVI Aubagne"><p>Indice NDVI à Aubagne</p></div>
+      <div class="gallery-item"><img src="projection_foret_2035.png" alt="Projection 2035"><p>Projection forestière à l’horizon 2035</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ewan N'Guessan – Portfolio cartographique</p>
+  </footer>
+</body>
+</html>
